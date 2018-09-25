@@ -91,6 +91,7 @@
     "react-dom": "^15.3.0 || ^16.0.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "nps build && bundlesize",
     "watch": "nps build.watch",
     "coveralls": "cat coverage/lcov.info | coveralls",
@@ -105,11 +106,6 @@
     "test:cypress-watch": "node ./node_modules/.bin/cypress open",
     "precommit": "flow check && lint-staged"
   },
-  "files": [
-    "dist",
-    "lib",
-    "src"
-  ],
   "keywords": [
     "combobox",
     "form",
